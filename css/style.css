@@ -1,0 +1,152 @@
+.size {
+  width: 400px;
+  height: 400px;
+  background: #f00;
+  margin: 0 auto;
+}
+/* @media screen and (max-width: 959px) {
+  .size {
+    width: 200px;
+    height: 200px;
+  }
+} */
+
+.color {
+  width: 300px;
+  height: 300px;
+  background: #f00;
+  margin: 0 auto;
+}
+/* @media screen and (max-width: 959px) {
+  .color {
+    background: #007bff;
+  }
+} */
+
+.mar--wrap {
+  display: flex;
+  justify-content: center;
+}
+.mar--wrap > div {
+  width: 300px;
+  height: 300px;
+}
+.margin--1 {
+  background: #0008ff;
+  margin-right: 150px;
+}
+.margin--2 {
+  background: #2f0;  
+}
+/* @media screen and (max-width: 959px) {
+  .margin--1 {
+    margin-right: 50px;
+  }
+} */
+
+.align_center {
+  text-align: center;
+}
+
+.float_container {
+  display: inline-block;
+}
+
+.float_container > div {
+  width: 300px;
+  height: 300px;
+  float: left;  
+}
+
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+  }
+
+.fl--1 {
+  background: #f00;
+}
+.fl--2 {
+  background: #0008ff;
+  
+}
+
+
+.fb--1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fb--1 > div {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  display: table;
+}
+.red {background: #f00;}
+.blue {background: #0008ff;}
+.orange {background: #ff8400;}
+.abc {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+.fb--2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fb--2 > div {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  display: table;
+}
+.lime {background: #00ff51;}
+.lemon {background: #d4ff00;}
+.grape {background: #ff00e1;}
+
+
+.hidden {
+  display: flex;
+  justify-content: center;
+}
+.hidden > div {
+  width: 300px;
+  height: 300px;
+}
+
+
+@media screen and (max-width: 959px) {
+  .size {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .color {
+    background: #007bff;
+  }
+
+  .margin--1 {
+    margin-right: 50px;
+  }
+
+  .float_container > div {
+    float: none;
+  }
+
+  .fb--1 {
+    flex-direction: row-reverse;
+  }
+
+  .lime {order: 1;}
+  .lemon {order: 2;}
+
+  .pc {display: none;}
+}
+
+@media screen and (min-width: 960px) {
+  .sp {display: none;}
+}
